@@ -18,13 +18,13 @@
 }:
 let
   # We have to hardcode revision because upstream often create multiple releases for the same version number.
-  # This is the commit hash that maps to 1.5.0-beta.8 released on 2025-03-12
-  rev = "de11d84afac7873044568606a8468c78d57aceda";
+  # This is the commit hash that maps to 1.5.0-beta.11 released on 2025-03-12
+  rev = "6f5eb7b951ae42e74416e79a83b3c15ca8f44bf1";
 in
 stdenv.mkDerivation {
   pname = "streamcontroller";
 
-  version = "1.5.0-beta.8";
+  version = "1.5.0-beta.11";
 
   src = fetchFromGitHub {
     repo = "StreamController";
