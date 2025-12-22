@@ -12,14 +12,14 @@ with python3.pkgs;
 
 buildPythonPackage rec {
   pname = "mailman";
-  version = "3.3.9";
+  version = "3.3.10";
   pyproject = true;
 
   disabled = pythonOlder "3.6";
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-GblXI6IwkLl+V1gEbMAe1baVyZOHMaYaYITXcTkp2Mo=";
+    hash = "sha256-0ce478fcf326f25d931938c3744e61c5cd67596b46e5b1e3bb2abf99d5445632";
   };
 
   build-system = with python3.pkgs; [
