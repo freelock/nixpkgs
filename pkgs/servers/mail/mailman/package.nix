@@ -19,7 +19,7 @@ buildPythonPackage rec {
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-0ce478fcf326f25d931938c3744e61c5cd67596b46e5b1e3bb2abf99d5445632";
+    hash = "sha256-DeR4/PMm8l2TGTjDdE5hxc1nWWtG5bHjuyq/mdVEVjI=";
   };
 
   build-system = with python3.pkgs; [
